@@ -102,8 +102,10 @@ function Home() {
   return (
     <div className="flex flex-wrap justify-center bg-yellow-600">
       <h1 className="mt-6 text-6xl text-white">Coffe!</h1>
-      <div className="mt-2 flex w-full justify-center flex-wrap">
-        <p className="text-lg w-full text-center m-2 mb-4 text-white">Filter By:</p>
+      <div className="mt-2 flex w-full flex-wrap justify-center">
+        <p className="m-2 mb-4 w-full text-center text-lg text-white">
+          Filter By:
+        </p>
         <button
           className="mx-4 rounded border p-1 text-black hover:bg-white"
           onClick={() => HandleFilter('hot')}
