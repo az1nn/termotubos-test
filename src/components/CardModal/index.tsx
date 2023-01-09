@@ -2,7 +2,7 @@ import { Card } from 'components/Home/Index'
 import React from 'react'
 
 const CardModal = (props) => {
-  const { selectedItem, setShowModal, showModal } = props
+  const { selectedItem, setShowModal } = props
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
@@ -33,10 +33,10 @@ const CardModal = (props) => {
               </p>
             </div>
             <div>
-              <p className="w-full text-center my-1 text-lg text-black">
+              <p className="my-1 w-full text-center text-lg text-black">
                 Ingredients:
               </p>
-              <div className="w-full flex justify-center">
+              <div className="flex w-full justify-center">
                 {selectedItem.ingredients.map((item: Array<string>, index) => {
                   return (
                     <p className="p-2" key={index}>
