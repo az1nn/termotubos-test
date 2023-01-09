@@ -1,11 +1,5 @@
 import { useEffect } from 'react'
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider
-} from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query'
 import Home from './Home/Index'
 
 const queryClient = new QueryClient()
