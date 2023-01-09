@@ -1,7 +1,7 @@
 import { Card } from 'components/Home/Index'
 import React from 'react'
 
-const CardModal = (props) => {
+const CardModal = (props: any) => {
   const { selectedItem, setShowModal } = props
   return (
     <>
@@ -37,13 +37,15 @@ const CardModal = (props) => {
                 Ingredients:
               </p>
               <div className="flex w-full justify-center">
-                {selectedItem.ingredients.map((item: Array<string>, index) => {
-                  return (
-                    <p className="p-2" key={index}>
-                      {item}
-                    </p>
-                  )
-                })}
+                {selectedItem.ingredients.map(
+                  (item: Array<string>, index: any) => {
+                    return (
+                      <p className="p-2" key={index}>
+                        {item}
+                      </p>
+                    )
+                  }
+                )}
               </div>
             </div>
             <div className="flex items-center justify-center p-6">
