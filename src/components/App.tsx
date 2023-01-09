@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import Home from './Home/Index'
 
